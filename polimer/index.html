@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLIMER</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/slick/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- оставить заявку -->
+    <div class="submit-your-application" style="display: none;">
+
+        <div class="wrapper-submit">
+            <div class="wrapper-submit-content">
+                <h2 class="submit-mobile-title submit-mobile-title-two">
+                    Спасибо!<br>Ваша не заявка принята
+                </h2>
+
+                <p class="card-back-data card-back-data-two">
+                    Ожидайте звонка от оператора
+                </p>
+
+                <img src="./img/back/yes.png" alt="#">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="exampleModal" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content modal-content-dialog">
+                <div class="modal-header border-0 d-flex justify-content-end mt-2">
+                    <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">Закрыть</span>
+              </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="wrapper-submit-content">
+                        <h2 class="submit-mobile-title submit-mobile-title-individ">
+                            Заказать<br>обратный звонок
+                        </h2>
+                        <p class="card-back-data card-back-data-individ">
+                            Для того, чтобы оператор с Вами связался, оставьте ваши данные
+                        </p>
+
+                        <input class="wrapper-input" type="text" placeholder="Ваше имя">
+                        <input class="wrapper-input-place" type="text" placeholder="+7 (___) ___ - __ - __">
+
+                        <label class="label-radio" for="scales">
+                            <input type="checkbox" name="people-number" class="real-radio" id="scales"> 
+                            <div class="custom-radio"><img class="custom-radio-block" src="./img/back/chek.svg" alt=""></div>
+                            <p class="custom-radio-click">Согласие на обработку своих персональных данных</p>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="modal-footer border-0 d-flex justify-content-center mb-5">
+                    <button type="button" class="btn btn-modal-call">Заказать обратный звонок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- оставить заявку -->
+
+    <section class="header">
+
+        <div class="container-fluid bg-white header">
+            <nav class="navbar px-0 navbar-expand-xl navbar-light py-4">
+                <div class="container">
+                    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <a href="index.html" class="navbar-brend flex-column text-decoration-none d-flex align-items-center">
+                        <img src="img/logo/logo-header.png" alt="logo" class="logo-img">
+                    </a>
+                    <a href="tel:+7 (846) 214-00-92" class="btn phone-mobile p-0 d-block d-xl-none"><img src="img/phone/phone.png" alt=""></a>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav my-5 my-xl-0">
+                            <li class="nav-item text-center text-dark">
+                                <a class="nav-link header-nav-link" href="#advantages">Преимущества</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link header-nav-link" href="#services">Кейсы</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link header-nav-link" href="#catalog">Каталог</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link header-nav-link" href="#we">О нас</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link header-nav-link" href="#certificates">Отзывы</a>
+                            </li>
+                            <li class="nav-item text-center">
+                                <a class="nav-link header-nav-link" href="#contact">Контакты</a>
+                            </li>
+                        </ul>
+
+                        <div class="our-contacts__messenger justify-content-center mb-5 d-xl-none">
+                            <a href="#"><img src="./img/messenger/face.png " alt="messenger "></a>
+                            <a href="# "><img src="./img/messenger/twit.png " alt="messenger "></a>
+                            <a href="# "><img src="./img/messenger/inst.png " alt="messenger "></a>
+                        </div>
+
+                        <button class="btn-mob btn-big mx-auto d-block d-xl-none" data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+                    </div>
+                    <div class="navbar-feedback text-right d-none d-xl-flex flex-column  mb-0">
+                        <a class="phone-header mb-0" href="tel:+78462140092" data-toggle="modal" data-target="#exampleModal">+7 (846) 214-00-92</a>
+
+                        <button class="btn bell-header" data-toggle="modal" data-target="#exampleModal">Заказать звонок</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="header-main ">
+            <div class="container ">
+                <div class="header-content ">
+
+                    <div class="header-main-plastic-bags ">
+                        <h1>Оперативно изготовим</h1>
+
+                        <h4>полиэтиленовые пакеты с вашим логотипом в срок от 5 дней</h4>
+
+                        <img class="mobile-image-header " src="./img/header/pack.png " alt=" ">
+
+                        <p>По ценам на<span>15%</span>ниже рыночных<br> и с бесплатной доставкой</p>
+
+                        <button class="btn-big btn-individ " data-toggle="modal" data-target="#exampleModal">Узнать подробнее</button>
+                    </div>
+
+                    <img class="desctop-img " src="./img/header/pack-desk.png " alt=" ">
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="advantages" class="advantages ">
+        <div class="container ">
+            <h2 class="title-medium advantages-title ">преимущества</h2>
+
+
+            <div class="benefit ">
+
+                <div class="benefit-line ">
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/proizv.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">01</h3>
+                                <h4 class="title-three ">Свое<br>производство</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Производство полного цикла – гарантия самой выгодной цены на рынке</p>
+
+                    </div>
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/hard-progect.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">02</h3>
+                                <h4 class="title-three ">Сложные<br>проекты</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Реализация технически сложных проектов с учетом требований и пожеланий заказчика</p>
+
+                    </div>
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/otsrochka.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">03</h3>
+                                <h4 class="title-three ">Отсрочка<br>платежа</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Возможность предоставление отсрочки до 30 дней</p>
+
+                    </div>
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/free-dostavka.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">04</h3>
+                                <h4 class="title-three ">Бесплатная<br>доставка</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Собственная логистика – бесплатная доставка по Приволжскому Федеральному округу</p>
+
+                    </div>
+
+                </div>
+
+                <div class="benefit-line ">
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/free-dis.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">05</h3>
+                                <h4 class="title-three ">Дизайн<br>бесплатно</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Разработка дизайн-макета бесплатно</p>
+
+                    </div>
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/obraz.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">06</h3>
+                                <h4 class="title-three ">Образец<br>продукции</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Предоставляем бесплатные образцы продукции</p>
+
+                    </div>
+
+                    <div class="benefit-stages ">
+                        <div class="benefit-stages__using ">
+                            <img src="./img/advantages/certificate.png " alt="производство ">
+                            <div class="benefit-stages__sentense ">
+                                <h3 class="title-number title-color ">07</h3>
+                                <h4 class="title-three ">Сертификат<br>качества</h4>
+                            </div>
+                        </div>
+                        <p class="using-information ">Вся продукция имеет сертификат ЕЭС</p>
+
+                    </div>
+
+                    <img class="benefit-img-bottom " src="./img/advantages/desctop-pac.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="doubt">
+        <div class="doubt-substrate "></div>
+        <div class="doubt-payment ">
+
+            <div class="doubt__question ">
+                <h1 class="title-medium doubt-title ">Сомневаетесь?</h1>
+                <p class="doubt-batch-cost ">
+                    Рассчитайте стоимость партии, ответив на 6 вопросов + сразу<br> скачайте чек-лист «Как не переплатить при оптовой закупке пакетов»
+                </p>
+            </div>
+
+            <button class="btn-big btn-calculate ">Расчитать</button>
+        </div>
+    </section>
+
+    <section class="multi-section">
+        <img class="multi-section__line " src="./img/multi-section/line.png " alt=" ">
+        <section id="services" class="cases">
+            <div class="container ">
+                <div class="cases-click ">
+
+                    <h1 class="title-medium ">кейсы</h1>
+
+                    <div class="cases-arrow ">
+
+                        <button class="cases-arrow__style next-ar">&larr;</button>
+                        <button class="cases-arrow__style prew-ar">&rarr;</button>
+
+                    </div>
+
+                </div>
+
+                <div class="slider-width">
+                    <div class="slider">
+                        <div class="slider-container">
+
+                            <div class="slider-box">
+                                <img class="box-photo" src="./img/cases/appetit.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box ">
+                                <img class="box-photo" src="./img/cases/forge.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box ">
+                                <img class="box-photo" src="./img/cases/salon.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box ">
+                                <img class="box-photo" src="./img/cases/fishka.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box">
+                                <img class="box-photo" src="./img/cases/friends.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box">
+                                <img class="box-photo " src="./img/cases/beer.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box ">
+                                <img class="box-photo " src="./img/cases/roducts.jpg " alt="picture ">
+                            </div>
+
+                            <div class="slider-box ">
+                                <img class="box-photo " src="./img/cases/toyota.jpg " alt="picture ">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selection ">
+
+                <div class="selection-background ">
+                    <div class="selection-bag ">
+
+                        <h3 class="title-medium selection-title ">
+                            Не знаете какие пакеты Вам подойдут?
+                        </h3>
+
+                        <div class="delection-request ">
+
+                            <p class="two-minуtes ">Оставьте заявку и мы<br> подберем их Вам за 2 минуты</p>
+
+                            <button class="btn-big btn-pick__up " data-toggle="modal" data-target="#exampleModal">Подобрать</button>
+
+                        </div>
+
+                    </div>
+
+                    <img class="bag-cellophane " src="./img/multi-section/selection-bag.png " alt=" ">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="catalog" class="catalog ">
+            <div class="container ">
+                <div class="catalog-information ">
+
+                    <h3 class="title-medium catalog-title ">каталог</h3>
+
+                    <p class="catalog-form ">Печатные формы приобретаются отдельно (для печати логотипа) единожды и <span>служат до 5 млн. оттисков.</span></p>
+
+                </div>
+
+                <div class="catalog-production ">
+
+                    <div id="catalog-to-order" class="package-to-buy package-to-buy_active">
+                        <p>Пакет на заказ с логотипом</p>
+                    </div>
+
+                    <div id="catalog-serial" class="package-to-buy">
+                        <p>Серийная продукция</p>
+                    </div>
+
+
+                </div>
+
+
+                <p class="different-packages ">(любые размеры и плотность, материал ПНД и ПСД)</p>
+
+                <div class="catalog-choice d-flex">
+
+                    <div class="catalog-choice__bag ">
+
+                        <img class="one-card-bag hover-bag " src="./img/catalog/maika.png " alt="пакет ">
+                        <div class="hover-card__block one-card-block-position ">
+                            <p class="hover-card__information ">
+                                <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                            </p>
+                        </div>
+
+                        <p class="catalog-underline ">Пакет “Майка”</p>
+                    </div>
+
+                    <div class="catalog-choice__bag ">
+
+                        <img class="two-card-bag hover-bag " src="./img/catalog/ypacov-pac.png " alt="пакет ">
+                        <div class="hover-card__block two-card-block-position ">
+                            <p class="hover-card__information ">
+                                <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                            </p>
+                        </div>
+
+                        <p class="catalog-underline ">Упаковочный пакет</p>
+                    </div>
+
+                    <div class="catalog-choice__bag ">
+
+                        <img class="three-card-bag hover-bag " src="./img/catalog/bio.png " alt="пакет ">
+                        <div class="hover-card__block three-card-block-position ">
+                            <p class="hover-card__information ">
+                                <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                            </p>
+                        </div>
+
+                        <p class="catalog-underline ">Биоразлагаемые пакеты</p>
+                    </div>
+                </div>
+
+                <div class="width-catalog-mobile d-flex">
+                    <div class="catalog-choice-mobile ">
+                        <div class="catalog-choice-container ">
+                            <div class="choice-mobile-card ">
+
+                                <img class="card-mobile-width-individ hover-bag-mobile " src="./img/catalog/maika.png " alt="пакет ">
+                                <div class="width-hover-card__block ">
+                                    <p class="width-hover-card__information ">
+                                        <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                                    </p>
+                                </div>
+
+                                <p class="catalog-underline ">Пакет “Майка”</p>
+                            </div>
+
+                            <div class="choice-mobile-card ">
+                                <img class="two-card-mobile hover-bag-mobile " src="./img/catalog/ypacov-pac.png " alt="пакет ">
+
+                                <div class="width-hover-card__block ">
+                                    <p class="width-hover-card__information ">
+                                        <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                                    </p>
+                                </div>
+
+                                <p class="catalog-underline ">Упаковочный пакет</p>
+                            </div>
+
+                            <div class="choice-mobile-card ">
+                                <img class="three-card-mobile-individ hover-bag-mobile " src="./img/catalog/bio.png " alt="пакет ">
+
+                                <div class="width-hover-card__block ">
+                                    <p class="width-hover-card__information ">
+                                        <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                                    </p>
+                                </div>
+
+                                <p class="catalog-underline ">Биоразлагаемые пакеты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two-catalog-choice d-none">
+                    <div class="catalog-choice__bag ">
+
+                        <img class="one-card-bag hover-bag " src="./img/catalog/gloves.png " alt="пакет ">
+
+                        <div class="hover-card__block two-choice-position-one ">
+                            <p class="hover-card__information ">
+                                <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                            </p>
+                        </div>
+
+                        <p class="catalog-underline ">Одноразовые перчатки</p>
+                    </div>
+
+                    <div class="catalog-choice__bag ">
+                        <img class="two-card-bag-individ hover-bag " src="./img/catalog/maika.png " alt="пакет ">
+
+                        <div class="hover-card__block two-choice-position-two ">
+                            <p class="hover-card__information ">
+                                <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                            </p>
+                        </div>
+
+                        <p class="catalog-underline ">Пакет “Майка”</p>
+                    </div>
+
+                    <div class="catalog-choice__bag ">
+                        <img class="three-card-bag hover-bag " src="./img/catalog/moosorn.png " alt="пакет ">
+
+                        <div class="hover-card__block two-choice-position-three ">
+                            <p class="hover-card__information ">
+                                <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                            </p>
+                            <p class="hover-card__information ">
+                                <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                            </p>
+                        </div>
+
+                        <p class="catalog-underline ">Мусорные мешки</p>
+                    </div>
+                </div>
+
+                <div class="two-width-catalog-mobile d-none">
+                    <div class="catalog-choice-mobile ">
+                        <div class="catalog-choice-container ">
+                            <div class="choice-mobile-card ">
+                                <img class="one-card-mobile hover-bag-mobile " src="./img/catalog/gloves.png " alt="пакет ">
+
+                                <div class="width-hover-card__block ">
+                                    <p class="width-hover-card__information ">
+                                        <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                                    </p>
+                                </div>
+
+                                <p class="catalog-underline ">Одноразовые перчатки</p>
+                            </div>
+
+                            <div class="choice-mobile-card ">
+                                <img class="two-card-mobile__individ hover-bag-mobile " src="./img/catalog/maika.png " alt="пакет ">
+
+                                <div class="width-hover-card__block ">
+                                    <p class="width-hover-card__information ">
+                                        <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                                    </p>
+                                </div>
+
+                                <p class="catalog-underline ">Пакет “Майка”</p>
+                            </div>
+
+                            <div class="choice-mobile-card ">
+                                <img class="three-card-mobile hover-bag-mobile " src="./img/catalog/moosorn.png " alt="пакет ">
+
+                                <div class="width-hover-card__block ">
+                                    <p class="width-hover-card__information ">
+                                        <span>30 литров</span> - (460*550),<br>плотность 8 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>60 литров</span> - (580*675),<br>плотность 8; 10 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>120 литров</span> - (680*1005),<br>плотность 10; 14 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>180 литров</span> - (740*1060),<br>плотность 30 мкм
+                                    </p>
+                                    <p class="width-hover-card__information ">
+                                        <span>240 литров</span> - (470(230*1200),<br>плотность 35 мкм
+                                    </p>
+                                </div>
+
+                                <p class="catalog-underline ">Мусорные мешки</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="catalog-information__bag ">
+                    Для производства пакетов с логотипом необходимо изготовление флексоформ (печатные формы, с помощью которых наносится<br>логотип на пакет) - является собственностью клиента, находится на ответственном хранении, на нашем производстве.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="we" class="company">
+
+            <img class="compani-position " src="./img/about/img.png " alt=" ">
+
+            <div class="container ">
+                <h3 class="title-medium title-company ">О компании</h3>
+
+                <div class="company-numbers ">
+
+                    <div class="company-numbers__elements ">
+
+                        <h2 class="title-number title-number__color ">01</h2>
+
+                        <p class="company-number__information ">12 лет производственного опыта на рынке полимерных изделий</p>
+
+                    </div>
+                    <div class="company-numbers__elements ">
+
+                        <h2 class="title-number title-number__color ">02</h2>
+
+                        <p class="company-number__information ">Производственные мощности предприятия более 300 тонн в месяц выпускаемой продукции
+                        </p>
+
+                    </div>
+                    <div class="company-numbers__elements ">
+
+                        <h2 class="title-number title-number__color ">03</h2>
+
+                        <p class="company-number__information ">Более 5 000 кв.м. собственных складских помещений
+                        </p>
+
+                    </div>
+                    <div class="company-numbers__elements ">
+
+                        <h2 class="title-number title-number__color ">04</h2>
+
+                        <p class="company-number__information ">Предприятие оснащено высокотехнологичным европейским оборудованием</p>
+
+                    </div>
+                    <div class="company-numbers__elements ">
+
+                        <h2 class="title-number title-number__color individ-before">05</h2>
+
+                        <p class="company-number__information ">Собственный отдел технического контроля и испытания выпускаемой продукции </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <section class="working">
+        <div class="working-substrate "></div>
+        <div class="working-stage ">
+            <div class="container ">
+                <h2 class="title-medium title-heading ">как мы работаем</h2>
+
+                <div class="working-number ">
+                    <div class="working-number__card ">
+                        <div class="card-header border-0 bg-white">
+                            <img src="./img/we-work/1.png " alt="image ">
+
+                            <div class="working-stage__column ">
+                                <h2 class="title-number title-working ">01</h2>
+                                <h4 class="working-item__stage ">Оставляете<br>заявку
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="card-item__information ">Вы оставляете заявку, наш менеджер связывается с вами (составляется тех.задание по вашим требованиям на производство пакетов, информируем вас о стоимости данного заказа)</p>
+                    </div>
+
+                    <div class="working-number__card ">
+                        <div class="card-header border-0 bg-white">
+                            <img src="./img/we-work/2.png " alt="image ">
+
+                            <div class="working-stage__column ">
+                                <h2 class="title-number title-working ">02</h2>
+                                <h4 class="working-item__stage ">Подготавливаем<br>дизайн
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="card-item__information ">Бесплатно разрабатываем вам дизайн макет пакета (предоставляем несколько вариантов на утверждение)</p>
+                    </div>
+
+                    <div class="working-number__card ">
+                        <div class="card-header border-0 bg-white">
+                            <img src="./img/we-work/3.png " alt="image ">
+
+                            <div class="working-stage__column ">
+                                <h2 class="title-number title-working ">03</h2>
+                                <h4 class="working-item__stage ">Составляем<br>договор
+                                </h4>
+                            </div>
+                        </div>
+                        <p class="card-item__information ">Составляем договор и спецификацию на производимую партию (прописываются все параметры: размеры, цвет и плотность пакета, а так же цвета печати и их количества на пакете. Вы вносите предоплату в размере 50%, заказ размещается в
+                            работу, остальные 50% оплачиваются заказчиком по факту поставки.</p>
+                    </div>
+
+                    <div class="working-number__card ">
+                        <div class="card-header border-0 bg-white">
+                            <img src="./img/we-work/4.png " alt="image ">
+
+                            <div class="working-stage__column ">
+                                <h2 class="title-number title-working ">04</h2>
+                                <h4 class="working-item__stage ">Выполняем<br>заказ и достаку</h4>
+                            </div>
+                        </div>
+                        <p class="card-item__information ">Мы производим и доставляем готовую продукцию в строго обозначенные сроки до вашего склада (срок производства 14 дней; доставка осуществляется собственным транспортом организации или транспортными логистическими компаниями партнерами).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="working-options__card ">
+
+                    <div class="options__cars ">
+                        <img class="work-options__card " src="./img/we-work/ur-face.png " alt="image ">
+
+                        <p class="informations-options__card ">Работаем с юр. лицами, физ. лицами и бюджетными организациями</p>
+                    </div>
+
+                    <div class="options__cars ">
+                        <img class="work-options__card " src="./img/we-work/oplata.png " alt="image ">
+
+                        <p class="informations-options__card ">Оплата наличным и безналичным расчетом</p>
+                    </div>
+
+                    <div class="options__cars ">
+                        <img class="work-options__card " src="./img/we-work/dogovor.png " alt="image ">
+
+                        <p class="informations-options__card ">Соблюдение условий официального соглашения, защищающее права клиента</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="certificates" class="certificates">
+        <img class="top-back-fon " src="./img/certificates/certificates-fon.png " alt="# ">
+        <img src="./img/certificates/tochki-mobile.png " alt="# " class="top-back-fon-mobile ">
+        <img class="bottom-back-fon " src="./img/certificates/certificates-fon.png " alt="# ">
+
+        <div class="container ">
+
+
+            <div class="reviews-top">
+                <div class="title-medium title-medium__revievs">Отзывы и сертификаты</div>
+                <div class="reviews-top__text">
+                    Составляем договор и спецификацию на производимую партию (прописываются все параметры: размеры, цвет и плотность пакета, а так же цвета печати и их количества на пакете.
+                </div>
+                <div class="reviews-arrows">
+                    <div class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="8" viewBox="0 0 21 8" fill="none">
+                                <path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976309 4.7308 0.659727 4.53553 0.464465C4.34027 0.269202 4.02369 0.269202 3.82843 0.464465L0.646446 3.64644ZM21 3.5L1 3.5L1 4.5L21 4.5L21 3.5Z"/>
+                            </svg>
+                    </div>
+                    <div class="count">
+                        <div class="count__dinamic">1</div>
+                        /
+                        <div class="count__static">5</div>
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="8" viewBox="0 0 21 8" fill="none">
+                                <path d="M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-slider">
+                <div class="card-reviews-top">
+                    <div class="card__top-btn">
+                        <img class="card__image" src="./img/certificates/man-one.png">
+                        <div class="card__title-reviews">Фомин<br>Роман</div>
+                    </div>
+                    <div class="card__rank">Директор сети пивных магазинов<br>«Запивком»
+                    </div>
+                    <div class="card__text">
+                        С компанией ПолимерТорг работаем более 2-х лет, до этого работали с другими поставщиками, поменяли в связи с тем, что ПолимерТорг предложили более выгодные цены, причём качество пакетов на должном уровне: прочность, качество печати и точность в заявленных
+                        характеристиках.
+                    </div>
+                    <div class="card__data">22.10.2020</div>
+                </div>
+
+                <div class="card-reviews-top">
+                    <div class="card__top-btn">
+                        <img class="card__image" src="./img/certificates/man-two.png">
+                        <div class="card__title-reviews">Дыранов<br>Алексей</div>
+                    </div>
+                    <div class="card__rank">Маркетолог сети<br>«Кузница»
+                    </div>
+                    <div class="card__text">
+                        Компания подходит ответственно к заявкам, поставки осуществляются точно в срок. Довольны сотрудничеством.
+                    </div>
+                    <div class="card__data">28.06.2020</div>
+                </div>
+
+                <div class="card-reviews-top">
+                    <div class="card__top-btn">
+                        <img class="card__image" src="./img/certificates/women-one.png">
+                        <div class="card__title-reviews">Зарипова<br>Роза</div>
+                    </div>
+                    <div class="card__rank">Директор сети закусочных<br>«Шаурмания»
+                    </div>
+                    <div class="card__text">
+                        Для организации заказываем пакеты-майка с логотипом, и с недавних пор полиэтиленовые перчатки. Компанию ПолимерТорг посоветовали знакомые, кто с ними уже работает, не ошиблись в выборе. По Самаре оказались самые выгодные по цене и лучшие по качеству.
+                        Готовы тоже рекомендовать эту компанию.
+                    </div>
+                    <div class="card__data">14.12.2019</div>
+                </div>
+
+                <div class="card-reviews-top">
+                    <div class="card__top-btn">
+                        <img class="card__image" src="./img/certificates/women-two.png">
+                        <div class="card__title-reviews">Иванова<br>Елена</div>
+                    </div>
+                    <div class="card__rank">Управляющая по закупкам сети пекарен «Белочка»
+                    </div>
+                    <div class="card__text">
+                        Покупаем пакеты для упаковки полуфабрикатов в данной компании почти полгода, за это время сбоев в поставках не было. Совместно разработали дизайн логотипа, также ПолимерТорг предоставил рассрочку, что было очень удобно для нашей компании. Спасибо за качество
+                        и удобство.
+                    </div>
+                    <div class="card__data">07.09.2019</div>
+                </div>
+
+                <div class="card-reviews-top">
+                    <div class="card__top-btn">
+                        <img class="card__image" src="./img/certificates/man-one.png">
+                        <div class="card__title-reviews">Рюмин<br>Дмитрий</div>
+                    </div>
+                    <div class="card__rank">Бренд-шеф сети ресторанов «Фуджи суши»
+                    </div>
+                    <div class="card__text">
+                        Сотрудничаем с компанией ПолимерТорг на протяжении 3 лет. Продукцию и сервис оцениваем на отлично. Подходят очень ответственно к выполнению своих обязательств. Были моменты, очень выручили оперативностью изготовления и доставки пакетов. Продолжаем сотрудничать.
+                    </div>
+                    <div class="card__data">22.10.2020</div>
+                </div>
+            </div>
+
+
+            <div class="documents-company ">
+
+                <!-- <img class="bottom-back-fon " src="./img/certificates/certificates-fon.png " alt="# "> -->
+
+                <div class="documents-information ">
+                    <h2 class="title-documents-company ">сертификаты</h2>
+                    <p class="documents-example example-individ-one ">У нас имеется собственный отдел технического контроля и испытания выпускаемой продукции.</p>
+                    <p class="documents-example example-individ-two ">Помимо этого, мы имеем все сертификаты о качестве нашей продукции.</p>
+                </div>
+                <div class="documents-bag-fon ">
+                    <div class="our-certificates-two ">
+                        <div class="our-certificates ">
+                            <img src="./img/certificates/sert-one.png " alt=" ">
+                            <div class="fon-documents-card card-line-one "></div>
+                        </div>
+                        <div class="our-certificates ">
+                            <img src="./img/certificates/sert-two.png " alt=" ">
+                            <div class="fon-documents-card card-line-two "></div>
+                        </div>
+                    </div>
+                    <div class="our-certificates-two ">
+                        <div class="our-certificates ">
+                            <img src="./img/certificates/sert-three.png " alt=" ">
+                            <div class="fon-documents-card card-line-three "></div>
+                        </div>
+                        <div class="our-certificates ">
+                            <img src="./img/certificates/sert-four.png " alt=" ">
+                            <div class="fon-documents-card card-line-four "></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contacts-social ">
+        <div class="container ">
+
+            <h2 class="title-medium contacts-social-title ">контакты</h2>
+
+            <div class="contacts-social-card ">
+
+                <div class="contacts-social-address ">
+
+                    <div class="our-contacts ">
+
+                        <h4 class="title-contact-number ">Телефоны:</h4>
+                        <p class="contact-number__information ">8 846 214 00 92<br>8 927 890 64 04
+                        </p>
+
+                    </div>
+
+                    <div class="our-contacts ">
+
+                        <h4 class="title-contact-number ">Электронная почта:</h4>
+                        <p class="contact-number__information ">polimertorg-info@yandex.ru</p>
+
+                    </div>
+
+                    <div class="our-contacts ">
+
+                        <h4 class="title-contact-number ">Адрес:</h4>
+                        <p class="contact-number__information ">Россия, город Самара, поселок Киркомбината, ул. 5, неж. здание 1</p>
+
+                    </div>
+
+                    <div class="our-contacts ">
+
+                        <h4 class="title-contact-number ">Мы в соцсетях:</h4>
+                        <div class="our-contacts__messenger ">
+                            <a href="# "><img src="./img/messenger/face.png " alt="messenger "></a>
+                            <a href="# "><img src="./img/messenger/twit.png " alt="messenger "></a>
+                            <a href="# "><img src="./img/messenger/inst.png " alt="messenger "></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="contacts-social-iframe ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1195.677919086624!2d50.203247052869216!3d53.17559640693786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661c4f2275d60f%3A0xd7b8366eb2c8bba9!2z0KHQsNC80LDRgNGB0LrQuNC5INCX0LDQstC-0LQg0J_QvtC70LjQvNC10YDQvdGL0YUg0JjQt9C00LXQu9C40Lk!5e0!3m2!1sru!2sru!4v1605707225665!5m2!1sru!2sru "
+                    width="100% " height="100% " frameborder="0 " style="border:0; " allowfullscreen=" " aria-hidden="false " tabindex="0 "></iframe>
+            </div>
+            <div class="contacts-social__fon "></div> -->
+        </div>
+
+        <div class="iframe-maps ">
+            <div class="contacts-social-iframe ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1195.677919086624!2d50.203247052869216!3d53.17559640693786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661c4f2275d60f%3A0xd7b8366eb2c8bba9!2z0KHQsNC80LDRgNGB0LrQuNC5INCX0LDQstC-0LQg0J_QvtC70LjQvNC10YDQvdGL0YUg0JjQt9C00LXQu9C40Lk!5e0!3m2!1sru!2sru!4v1605707225665!5m2!1sru!2sru "
+                    width="100% " height="100% " frameborder="0 " style="border:0; " allowfullscreen=" " aria-hidden="false " tabindex="0 "></iframe>
+            </div>
+        </div>
+        <div class="contacts-social__fon "></div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container ">
+            <nav class="footer-navigation ">
+                <a class="footer-navigation-logo " href="# ">
+                    <img src="./img/logo/logo-footer.png " alt="logo ">
+                </a>
+
+                <ul class="footer-navigation-list ">
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#services">Кейсы</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#we">О нас</a></li>
+                    <li><a href="#certificates">Отзывы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+
+                <button class="btn-big btn-request " data-toggle="modal" data-target="#exampleModal">Оставить заявку</button>
+            </nav>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="./libs/slick/slick.js"></script>
+    <script src="js/main.js "></script>
+
+</body>
+
+</html>

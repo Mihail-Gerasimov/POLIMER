@@ -1,0 +1,232 @@
+.working{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.working-substrate{
+position: absolute;
+z-index: -1;
+background: #00BAEC;
+box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+border-radius: 20px;
+width: 1440px;
+height: 970px;
+top: -25px;
+
+
+@media (max-width: 1500px) {
+    width: 1300px;
+}
+@media (max-width: 1370px) {
+    width: 920px;
+}
+@media (max-width: 991px) {
+    display: none;
+}
+@media (max-width: 767px) {}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.working-stage{
+    padding: 80px 180px 0px 150px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    background-color: #fff;
+    width: 1500px;
+
+@media (max-width: 1500px) {
+    padding: 60px 150px 0px 130px;
+        width: 1360px;
+}
+@media (max-width: 1370px) {
+    padding: 30px 60px 0px 60px;
+    width: 980px;
+}
+@media (max-width: 991px) {
+    padding: 0px;
+    width: auto;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px rgb(255, 255, 255);
+}
+@media (max-width: 767px) {}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.title-heading{
+    margin-bottom: 50px;
+}
+
+.working-number{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 95px;
+    justify-content: space-between;
+
+@media (max-width: 1370px) {
+    margin-bottom: 35px;
+}
+@media (max-width: 991px) {
+    flex-wrap: nowrap;
+    margin-bottom: 90px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+@media (max-width: 767px) {}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.working-number__card{
+    margin-bottom: 63px;
+
+@media (max-width: 1200px) {}
+@media (max-width: 991px) {
+    margin-bottom: 50px;
+}
+@media (max-width: 767px) {}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.card-header{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+padding: 0px;
+    @media (max-width: 1370px) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: 991px) {
+        align-items: flex-end;
+    }
+    @media (max-width: 767px) {}
+    @media (max-width: 425px) {}
+    @media (max-width: 325px) {}
+    
+}
+
+.working-stage__column{
+    display: flex;
+
+@media (max-width: 1200px) {}
+@media (max-width: 991px) {
+    flex-direction: column;
+}
+@media (max-width: 767px) {}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.card-header img{
+    padding: 20px 21px;
+    background: #00BAEC;
+    border-radius: 10px;
+    margin-right: 20px;
+    width: 82px;
+    height: 80px;
+}
+
+.title-working{
+    color: #E0E0E0;
+    margin-right: 10px;
+}
+
+.working-item__stage{
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+}
+
+.card-item__information{
+    width: 518px;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+@media (max-width: 1370px) {
+    width: 400px;
+}
+@media (max-width: 991px) {}
+@media (max-width: 576px) {
+    width: 300px;
+}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.working-options__card{
+    bottom: -334px;
+    position: absolute;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+
+@media (max-width: 1200px) {}
+@media (max-width: 991px) {
+    flex-direction: column;
+    bottom: auto;
+}
+@media (max-width: 767px) {}
+@media (max-width: 425px) {}
+@media (max-width: 325px) {}
+}
+
+.options__cars{
+    box-shadow: -2px -2px 20px 0px rgba(181, 180, 197,0.5);
+    padding: 50px 25px 40px;
+    margin-right: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1370px) {
+        padding: 25px 10px 25px;
+        margin-right: 15px;
+    }
+    @media (max-width: 991px) {
+    width: 300px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    }
+    @media (max-width: 767px) {}
+    @media (max-width: 425px) {}
+    @media (max-width: 325px) {}
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.work-options__card{
+    margin-bottom: 30px;
+}
+
+.informations-options__card{
+    width: 320px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    @media (max-width: 1370px) {
+width: 240px;
+font-size: 16px;
+    }
+    @media (max-width: 991px) {}
+    @media (max-width: 767px) {}
+    @media (max-width: 425px) {}
+    @media (max-width: 325px) {}
+}
+
+
