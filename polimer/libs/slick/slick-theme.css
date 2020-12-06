@@ -17,7 +17,6 @@
   color: transparent;
   top: 50%;
   -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
@@ -149,3 +148,4 @@
   color: #000000;
   opacity: 0.75;
 }
+/*# sourceMappingURL=slick-theme.css.map */
