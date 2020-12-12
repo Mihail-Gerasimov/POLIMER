@@ -517,7 +517,26 @@ margin-bottom: 42px;
     &:hover .hover-card__block{
         display: block;
     }
+    &:hover .hover-card__block--individ{
+        display: block;
+    }
+}
 
+.minimum-price{
+    bottom: -52px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.minimum-price-mobile{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 29px;
+    text-align: center;
+    right: 0;
+    left: 0;
 }
 
 .hover-card__block{
@@ -535,6 +554,21 @@ margin-bottom: 42px;
 @media (max-width: 767px) {
     padding: 35px 5px;
 }
+}
+
+.hover-card__block--individ{
+    display: none;
+    box-shadow: 0 0 6px 0px rgba(117, 112, 112, 0.5);
+    padding: 35px 30px;
+    position: absolute;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.78);
+    @media (max-width: 991px) {
+        padding: 35px 15px;
+    }
+    @media (max-width: 767px) {
+        padding: 12px 5px;
+    }
 }
 
 .one-card-block-position{
